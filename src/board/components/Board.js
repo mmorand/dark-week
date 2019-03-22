@@ -1,7 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { changePhase, getNextPhase } from 'board/state/actions'
-import { DAWN, DUSK, NO_GAME } from "config/constants"
+import { changePhase } from 'board/state/actions'
+import { getNextPhase } from 'phase/utils'
+import { DUSK, NO_GAME } from "config/constants"
 import { getPhase } from 'board/state/selectors'
 import { colors, css, StyleSheet } from 'theme'
 import { Button } from '@material-ui/core'
@@ -23,7 +24,7 @@ export function UnconnectedBoard({ changePhase, phase }) {
       <Button onClick={startGame}
               color="primary"
               variant="contained">
-        New Game
+        Next
       </Button>
     </div>
   )
