@@ -1,11 +1,11 @@
 import { NO_GAME } from 'config/constants'
-import { CHANGE_PHASE } from "board/state/actions";
+import { CHANGE_PHASE } from "phase/state/actions";
 
 const initialState = {
   phase: NO_GAME
 }
 
-export function boardReducer(state = initialState, action) {
+export function phaseReducer(state = initialState, action) {
   switch(action.type) {
     case CHANGE_PHASE:
       return {

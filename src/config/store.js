@@ -1,8 +1,8 @@
 import { combineReducers, createStore } from 'redux'
-import { boardReducer } from 'board'
+import { phaseReducer } from 'phase'
 
 const rootReducer = combineReducers({
-  boardReducer,
+  phaseReducer,
 })
 
 export const store = createStore(

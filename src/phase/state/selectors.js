@@ -1,2 +1,2 @@
-const subState = (state) => state.boardReducer
+const subState = (state) => state.phaseReducer
 export const getPhase = (state) => subState(state).phase
